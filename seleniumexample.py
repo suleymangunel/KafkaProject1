@@ -13,7 +13,7 @@ def get_options():
 
 def main():
     import ShowPassDialog
-    parola = ShowPassDialog.main()
+    _password = ShowPassDialog.main()
 
     print("Selenium Example")
     chrome_driver_path = "D:\\Development\\chrome_driver\\chromedriver.exe"
@@ -45,10 +45,10 @@ def main():
                ".amazon.com.tr%2Fgp%2Fyourstore%2Fhome%3Fpath%3D%252Fgp%252Fyourstore%252Fhome%26useRedirectOnSuccess"
                "%3D1%26signIn%3D1%26action%3Dsign-out%26ref_%3Dnav_AccountFlyout_gno_signout&openid.assoc_handle"
                "=trflex&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0")
-    email_txtbox = driver.find_element(By.XPATH, value='//*[@id="ap_email"]')
-    email_txtbox.send_keys("suleymangunel@gmail.com")
-    email_txtbox.send_keys(Keys.RETURN)
-    passwd_txtbox = driver.find_element(By.XPATH, value='//*[@id="ap_password"]')
-    passwd_txtbox.send_keys(parola)
-    passwd_txtbox.send_keys(Keys.RETURN)
+    email_textbox = driver.find_element(By.XPATH, value='//*[@id="ap_email"]')
+    email_textbox.send_keys("suleymangunel@gmail.com")
+    email_textbox.send_keys(Keys.RETURN)
+    passwd_textbox = driver.find_element(By.XPATH, value='//*[@id="ap_password"]')
+    passwd_textbox.send_keys(_password)
+    passwd_textbox.send_keys(Keys.RETURN)
     #driver.quit()

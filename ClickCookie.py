@@ -5,6 +5,7 @@ from selenium.webdriver.common.keys import Keys
 from getpass import getpass
 import time
 
+
 def get_options():
     chrome_options = Options()
     chrome_options.add_experimental_option("detach", True)  # For controlling Chrome closing by code (driver.quit())
@@ -20,4 +21,4 @@ def main():
     cookie = driver.find_element(By.ID, value="bigCookie")
     while 1 == 1:
         cookie.click()
-    #driver.quit()
+    # driver.quit()
