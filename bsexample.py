@@ -17,7 +17,7 @@ def main():
     #         score = a.find_next(class_="score").string.split()[0]
     #         desc = lnktmp.string
     #         print("Desc: "+str(desc) + " -> ID: " + str(id) + " -> Link: " + str(lnk) + " -> Score: " + str(score))
-ghjghj
+
     article_ids = []
     article_texts = []
     article_links = []
